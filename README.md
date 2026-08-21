@@ -15,19 +15,15 @@ The analysis pipeline consists of the following R scripts.
 
 ### 1. Data collection
 
-`data_collection.R`
-
 Downloads the required NHANES datasets.
 
 Run this script if the required raw data have not already been downloaded:
 
 ```r
-source("data_collection.R")
+source("R/data_collection.R")
 ```
 
 ### 2. Data merging
-
-`data_merging.R`
 
 Merges the required NHANES datasets into a single data frame called `nhanes_data`.
 
@@ -41,33 +37,29 @@ Metadata are retained where available.
 Run:
 
 ```r
-source("data_merging.R")
+source("R/data_merging.R")
 ```
 
 > **Note:** Data transformations will be added/updated in this step as the analysis develops.
 
 ### 3. Data quality assessment
 
-`data_quality_assessment.R`
-
 Performs basic data quality assessment of `nhanes_data`, including summary information for the variables.
 
 Run:
 
 ```r
-source("data_quality_assessment.R")
+source("R/data_quality_assessment.R")
 ```
 
 ### 4. Exploratory data analysis
-
-`eda.R`
 
 Contains exploratory data analyses (EDA) for the merged NHANES dataset, including visualisations and investigation of variable distributions and relationships.
 
 Run:
 
 ```r
-source("eda.R")
+source("R/eda.R")
 ```
 
 ## Recommended Workflow
@@ -75,16 +67,16 @@ source("eda.R")
 Run the scripts in the following order:
 
 ```text
-data_collection.R
+R/data_collection.R
         ↓
-data_merging.R
+R/data_merging.R
         ↓
-data_quality_assessment.R
+R/data_quality_assessment.R
         ↓
-eda.R
+R/eda.R
 ```
 
-If the raw data have already been downloaded, `data_collection.R` can be skipped.
+If the raw data have already been downloaded, `R/data_collection.R` can be skipped.
 
 
 ## Data
