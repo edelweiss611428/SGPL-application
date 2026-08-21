@@ -1,19 +1,18 @@
 # Load datasets into workspace
+ghb = read_xpt("data/P_GHB.xpt")       # Glycohemoglobin (HbA1c) levels
+diq = read_xpt("data/P_DIQ.xpt")       # Diabetes questionnaire (self-reported)
+pfas = read_xpt("data/P_PFAS.xpt")     # Perfluoroalkyl & polyfluoroalkyl substances
 
-ghb = read_xpt("data/P_GHB.xpt")
-diq = read_xpt("data/P_DIQ.xpt")
-pfas = read_xpt("data/P_PFAS.xpt")
+demo = read_xpt("data/P_DEMO.xpt")     # Demographic data (age, sex, race, etc.)
+bmx = read_xpt("data/P_BMX.xpt")       # Body measures (height, weight, BMI)
+bpxo = read_xpt("data/P_BPXO.xpt")     # Blood pressure readings (oscillometric)
+inq = read_xpt("data/P_INQ.xpt")       # Family & individual income data
+alq = read_xpt("data/P_ALQ.xpt")       # Alcohol use questionnaire
 
-demo = read_xpt("data/P_DEMO.xpt")
-bmx = read_xpt("data/P_BMX.xpt")
-bpxo = read_xpt("data/P_BPXO.xpt")
-inq = read_xpt("data/P_INQ.xpt")
-alq = read_xpt("data/P_ALQ.xpt")
-
-smq = read_xpt("data/P_SMQ.xpt")
-smqfam = read_xpt("data/P_SMQFAM.xpt")
-smqrtu = read_xpt("data/P_SMQRTU.xpt")
-smqshs = read_xpt("data/P_SMQSHS.xpt")
+smq = read_xpt("data/P_SMQ.xpt")       # Cigarette & tobacco use questionnaire
+smqfam = read_xpt("data/P_SMQFAM.xpt") # Household smokers / family smoking history
+smqrtu = read_xpt("data/P_SMQRTU.xpt") # Recent tobacco use (past 5 days)
+smqshs = read_xpt("data/P_SMQSHS.xpt") # Secondhand smoke exposure
 
 # Merge all datasets via SEQN (key)
 
