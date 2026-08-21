@@ -86,20 +86,6 @@ eda.R
 
 If the raw data have already been downloaded, `data_collection.R` can be skipped.
 
-## Repository Structure
-
-```text
-SGPL-application/
-│
-├── data_collection.R
-├── data_merging.R
-├── data_quality_assessment.R
-├── eda.R
-├── README.md
-│
-└── data/
-    └── ...
-```
 
 ## Data
 
