@@ -1,3 +1,6 @@
+library("haven")
+library("tidyverse")
+
 # Load datasets into workspace
 ghb = read_xpt("data/P_GHB.xpt")       # Glycohemoglobin (HbA1c) levels
 diq = read_xpt("data/P_DIQ.xpt")       # Diabetes questionnaire (self-reported)
