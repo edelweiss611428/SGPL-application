@@ -70,7 +70,7 @@ ggplot(pfas_cat_long, aes(x = factor(category))) +
   ) +
   theme_bw()
 
-# ------ Correlation structure of PFAS biomarkers ------
+## ------ Correlation structure of PFAS biomarkers ------
 
 
 cor(pfas[,-1], use = "pairwise.complete.obs") %>% heatmap()
