@@ -1,6 +1,13 @@
+# ------ FPAS distributions ------
 # Exposure distribution assessment
 library("tidyverse")
 library("ggplot2")
+library("haven")
+library("tidyverse")
+
+# Load dataset into workspace
+pfas = read_xpt("data/P_PFAS.xpt")     # Perfluoroalkyl & polyfluoroalkyl substances
+
 
 pfas_long = pfas %>%
   select(-SEQN) %>%
